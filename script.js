@@ -67,8 +67,9 @@ const cards = [
   
   // Call the function
   renderCards(cards, "card-row");
+// -- facilities.js --
 
-  const facilityCards = [
+const facilityCards = [
     {
       title: "About us",
       image: "https://mala3b4.odoo.com/web_editor/shape/theme_kiddo/s_product_list_1.svg?c1=o-color-1&c2=o-color-2"
@@ -91,26 +92,36 @@ const cards = [
     }
   ];
   
-  const facilitiesRow = document.getElementById("facilities-row");
+  function renderFacilitySection() {
+    const row = document.getElementById("facilities-row");
+    if (!row) return;
   
-  facilityCards.map(card => {
-    const col = document.createElement("div");
-    col.className = "col-lg-2 col-6";
+    // Clear any existing cards
+    row.innerHTML = "";
   
-    col.innerHTML = `
-      <div class="s_card o_card_img_top card o_cc o_cc1" style="border-radius: 16px; border-width: 4px; border-style: dotted; border-color:green;">
-        <figure class="o_card_img_wrapper ratio ratio-4x3 mb-0">
-          <a aria-label="Link to ${card.title}" href="#">
-            <img src="${card.image}" alt="${card.title}">
-          </a>
-        </figure>
-        <div class="card-body">
-          <h3 class="card-title h5-fs" style="text-align: center;">${card.title}</h3>
-        </div>
-      </div>
-    `;
+    facilityCards.forEach(card => {
+      const div = document.createElement("div");
+      div.className = "facility-card";
   
-    facilitiesRow.appendChild(col);
-  });
+      div.innerHTML = `
+        <a aria-label="Link to ${card.title}" href="#">
+        <figure class="facility-card-image">
+          <img src="${card.image}" alt="${card.title}"
+               onerror="this.src='https://via.placeholder.com/150?text=No+Image'">
+        </a>
+        <h3>${card.title}</h3>
+        
+      `;
+  
+      row.appendChild(div);
+    });
+  }
+  
+  // Run on DOM ready
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", renderFacilitySection);
+  } else {
+    renderFacilitySection();
+  }
   
   

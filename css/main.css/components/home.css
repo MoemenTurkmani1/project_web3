@@ -1,36 +1,31 @@
 /* Reset and base styles */
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #fff;
   color: #333;
+  line-height: 1.6;
 }
 
-/* Section styling */
+/* Three columns section styling */
 .three-columns-section {
   background-color: #f9f9f9;
   padding: 100px 20px 60px;
   overflow-x: auto;
 }
 
-
-
-
 .row {
   display: flex;
-  flex-direction: row;
-  justify-content: center; /* Center items horizontally */
-  align-items: stretch; /* Stretch items to fill the row */
-  flex-wrap: nowrap; /* Keep items in one row */
-  gap: 10em; /* Space between cards */
-  overflow-x: auto; /* Enable horizontal scroll on small screens */
+  justify-content: center;
+  gap: 10em;
+  overflow-x: auto;
   padding-bottom: 20px;
 }
 
 /* Card column fixed width */
 .card-column {
-  flex: 0 0 auto; /* Prevent shrinking */
-  width: 300px; /* Fixed width */
+  flex: 0 0 auto;
+  width: 300px;
 }
 
 /* Card styling */
@@ -81,7 +76,6 @@ body {
 
 .card-text {
   font-size: 1rem;
-  line-height: 1.6;
   color: #555;
 }
 
@@ -90,7 +84,6 @@ body {
   width: 50px;
   height: 5px;
   margin: 8px auto 24px;
-  border: none;
   border-top: 5px dotted;
 }
 
@@ -102,7 +95,6 @@ body {
 .color2 {
   border-color: #0099cc;
 }
-
 
 /* Section spacing */
 .s_product_list {
@@ -122,38 +114,16 @@ body {
 #facilities-row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 20px;
   margin-top: 20px;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 /* Individual card column */
 #facilities-row .col-lg-2 {
-  flex: 1 1 calc(20% - 20px); /* 5 cards in a row with spacing */
-  max-width: calc(20% - 20px);
-  min-width: 160px;
-}
-
-/* Responsive breakpoints */
-@media (max-width: 992px) {
-  #facilities-row .col-lg-2 {
-    flex: 1 1 calc(33.333% - 20px);
-    max-width: calc(33.333% - 20px);
-  }
-}
-
-@media (max-width: 768px) {
-  #facilities-row .col-lg-2 {
-    flex: 1 1 calc(50% - 20px);
-    max-width: calc(50% - 20px);
-  }
-}
-
-@media (max-width: 480px) {
-  #facilities-row .col-lg-2 {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
+  flex: 0 0 auto;
+  max-width: none;
 }
 
 /* Card styles */
@@ -162,12 +132,16 @@ body {
   border-radius: 16px;
   border-width: 4px;
   border-style: dotted;
-  border-color: var( #0099cc); /* fallback color */
+  border-color: #0099cc;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1; /* Make it square */
+  width: 180px; /* Fixed width */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .s_card:hover {
@@ -177,7 +151,8 @@ body {
 
 /* Image container */
 .o_card_img_wrapper {
-  aspect-ratio: 4 / 3;
+  width: 100%;
+  flex: 1;
   background-color: #eee;
   display: flex;
   align-items: center;
@@ -186,23 +161,22 @@ body {
 
 /* Image styling */
 .o_card_img {
-  width: 30%;
-  height: 30%;
+  width: 40%;
+  height: auto;
   object-fit: contain;
 }
 
 /* Card content */
 .card-body {
-  padding: 16px;
+  padding: 10px;
   text-align: center;
 }
 
 .card-title {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin: 0;
   color: #222;
 }
-
 
 /* Responsive typography */
 @media (min-width: 992px) {
@@ -215,3 +189,130 @@ body {
   }
 }
 
+/* Call to action section */
+.s_call_to_action {
+  background-color: #f0f0f0;
+  position: relative;
+  padding: 152px 20px;
+  text-align: center;
+}
+
+.s_call_to_action .o_we_shape {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #007bff;
+  z-index: 1;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* CTA content styling */
+.cta-content {
+  width: 83.333%;
+  max-width: 1140px;
+  padding-top: 48px;
+  padding-bottom: 24px;
+  background-image: url("https://mala3b4.odoo.com/web_editor/shape/web_editor/Floats/14.svg?c1=%2300203f&c2=%23adefd1&c3=%23f0f3f5&c5=%2314212e");
+}
+
+/* CTA heading */
+.cta-content h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* CTA text */
+.cta-content p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* CTA button */
+.cta-button {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 12px 40px;
+  background-color: #00203f;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-align: center;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-5px);
+}
+
+.cta-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
+
+:root {
+  /* your mint color – tweak to taste */
+  --color2: #ade8d0;
+}
+
+/* Container grid for 5 equal cards */
+#facilities-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 24px;
+  margin: 20px 0 0;
+  padding: 0;
+}
+
+/* Individual card styling */
+.facility-card {
+  border: 4px dotted var(--color2);
+  border-radius: 16px;
+  background: #fff;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.facility-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.facility-card img {
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.facility-card h3 {
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
+  color: #222;
+}
+
+/* (Optional) Responsive tweaks */
+@media (max-width: 576px) {
+  .facility-card {
+    padding: 12px;
+  }
+  .facility-card h3 {
+    font-size: 0.9rem;
+  }
+}
