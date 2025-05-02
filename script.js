@@ -67,4 +67,50 @@ const cards = [
   
   // Call the function
   renderCards(cards, "card-row");
+
+  const facilityCards = [
+    {
+      title: "About us",
+      image: "https://mala3b4.odoo.com/web_editor/shape/theme_kiddo/s_product_list_1.svg?c1=o-color-1&c2=o-color-2"
+    },
+    {
+      title: "Our team",
+      image: "https://mala3b4.odoo.com/web_editor/shape/theme_kiddo/s_product_list_2.svg?c1=o-color-1&c2=o-color-2"
+    },
+    {
+      title: "Sports Complex",
+      image: "https://mala3b4.odoo.com/web_editor/shape/theme_kiddo/s_product_list_3.svg?c1=o-color-1&c2=o-color-2"
+    },
+    {
+      title: "Events",
+      image: "https://mala3b4.odoo.com/web_editor/shape/theme_kiddo/s_product_list_4.svg?c1=o-color-1&c2=o-color-2"
+    },
+    {
+      title: "Visit us",
+      image: "https://mala3b4.odoo.com/web_editor/shape/theme_kiddo/s_product_list_6.svg?c1=o-color-1&c2=o-color-2"
+    }
+  ];
+  
+  const facilitiesRow = document.getElementById("facilities-row");
+  
+  facilityCards.map(card => {
+    const col = document.createElement("div");
+    col.className = "col-lg-2 col-6";
+  
+    col.innerHTML = `
+      <div class="s_card o_card_img_top card o_cc o_cc1" style="border-radius: 16px; border-width: 4px; border-style: dotted; border-color:green;">
+        <figure class="o_card_img_wrapper ratio ratio-4x3 mb-0">
+          <a aria-label="Link to ${card.title}" href="#">
+            <img src="${card.image}" alt="${card.title}">
+          </a>
+        </figure>
+        <div class="card-body">
+          <h3 class="card-title h5-fs" style="text-align: center;">${card.title}</h3>
+        </div>
+      </div>
+    `;
+  
+    facilitiesRow.appendChild(col);
+  });
+  
   
