@@ -34,7 +34,7 @@ if (session_status() === PHP_SESSION_NONE) {
                 <a href="../pages/event.html" class="nav-link">Events</a>
                 <a href="../pages/pricing.html" class="nav-link">Pricing</a>
                 <a href="../pages/about.html" class="nav-link">About Us</a>
-                <a href="../pages/Service.html" class="nav-link">Services</a>
+                <a href="../pages/service.html" class="nav-link">services</a>
                 <a href="../pages/contact.html" class="nav-link">Contact</a>
                 <?php if (isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'owner'): ?>
                     <a href="../pages/dashboard.html" class="nav-link">Dashboard</a>
@@ -46,7 +46,7 @@ if (session_status() === PHP_SESSION_NONE) {
         <a href="../api/signout.php"><button class="btn btn-ghost">Log Out</button></a>
     <?php else: ?>
         <a href="../pages/SignIn.html"><button class="btn btn-ghost">Login</button></a>
-        <a href="../pages/SignUp.html"><button class="btn btn-primary">Sign Up</button></a>
+        <a href="../pages/signup.html"><button class="btn btn-primary">Sign Up</button></a>
     <?php endif; ?>
 </div>
 
@@ -101,9 +101,9 @@ if (session_status() === PHP_SESSION_NONE) {
                         <i class="fas fa-info-circle"></i>
                         <span>About Us</span>
                     </a>
-                    <a href="../pages/Service.html" class="nav-link">
+                    <a href="../pages/service.html" class="nav-link">
                         <i class="fas fa-concierge-bell"></i>
-                        <span>Services</span>
+                        <span>services</span>
                     </a>
                     <a href="../pages/contact.html" class="nav-link">
                         <i class="fas fa-envelope"></i>
@@ -124,7 +124,7 @@ if (session_status() === PHP_SESSION_NONE) {
             <i class="fas fa-sign-in-alt"></i>
             <span>Login</span>
         </a>
-        <a href="../pages/SignUp.html" class="btn btn-primary">
+        <a href="../pages/signup.html" class="btn btn-primary">
             <i class="fas fa-user-plus"></i>
             <span>Sign Up</span>
         </a>

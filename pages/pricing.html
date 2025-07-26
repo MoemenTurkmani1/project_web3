@@ -1,302 +1,555 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pricing Plans - Mala3b Sports Booking Platform</title>
-  <link rel="stylesheet" href="../assets/css/pricing.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <meta name="description" content="Choose the perfect pricing plan for your sports facility booking needs with Mala3b">
-</head>
-<body>
-  <!-- Navigation Header -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing Plans - Mala3b Sports Booking Platform</title>
+    <link rel="stylesheet" href="../assets/css/pricing.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="Choose the perfect pricing plan for your sports facility booking needs with Mala3b"
+    />
+  </head>
+  <body>
+    <!-- Navigation Header -->
 
-<header class="header">
+    <header class="header"></header>
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section class="hero-section" aria-labelledby="hero-title">
+        <div class="hero-background">
+          <div class="hero-pattern"></div>
+          <div class="hero-gradient"></div>
+        </div>
+        <div class="container">
+          <div class="hero-content">
+            <h1 id="hero-title" class="hero-title">
+              Simple, Transparent Pricing
+            </h1>
+            <p class="hero-subtitle">
+              Choose the perfect plan for your sports journey and start booking
+              today
+            </p>
 
-</header>
-  <!-- Main Content -->
-  <main class="main-content">
-    <!-- Hero Section -->
-    <section class="hero-section" aria-labelledby="hero-title">
-      <div class="hero-background">
-        <div class="hero-pattern"></div>
-        <div class="hero-gradient"></div>
-      </div>
-      <div class="container">
-        <div class="hero-content">
-          <h1 id="hero-title" class="hero-title">Simple, Transparent Pricing</h1>
-          <p class="hero-subtitle">Choose the perfect plan for your sports journey and start booking today</p>
-          
-          <div class="billing-toggle-wrapper">
-            <div class="billing-toggle" role="group" aria-label="Billing period selection">
-              <button class="toggle-option active" data-period="monthly" aria-pressed="true">Monthly</button>
-              <div class="toggle-switch">
-                <input type="checkbox" id="billing-toggle" aria-label="Switch to yearly billing">
-                <label for="billing-toggle" class="switch-slider"></label>
+            <div class="billing-toggle-wrapper">
+              <div
+                class="billing-toggle"
+                role="group"
+                aria-label="Billing period selection"
+              >
+                <button
+                  class="toggle-option active"
+                  data-period="monthly"
+                  aria-pressed="true"
+                >
+                  Monthly
+                </button>
+                <div class="toggle-switch">
+                  <input
+                    type="checkbox"
+                    id="billing-toggle"
+                    aria-label="Switch to yearly billing"
+                  />
+                  <label for="billing-toggle" class="switch-slider"></label>
+                </div>
+                <button
+                  class="toggle-option"
+                  data-period="yearly"
+                  aria-pressed="false"
+                >
+                  Yearly
+                </button>
+                <span class="save-badge">Save 20%</span>
               </div>
-              <button class="toggle-option" data-period="yearly" aria-pressed="false">Yearly</button>
-              <span class="save-badge">Save 20%</span>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Pricing Plans Section -->
-    <section class="pricing-section" aria-labelledby="pricing-title">
-      <div class="container">
-        <header class="section-header">
-          <h2 id="pricing-title" class="section-title">Choose Your Plan</h2>
-          <p class="section-subtitle">Start with our free plan or upgrade for unlimited access</p>
-        </header>
-        
-        <div class="pricing-grid">
-          <!-- Basic Plan -->
-          <article class="pricing-card">
-            <div class="card-header">
-              <h3 class="plan-name">Basic</h3>
-              <div class="price-display">
-                <span class="currency">$</span>
-                <span class="amount" data-monthly="0" data-yearly="0">0</span>
-                <span class="period">/month</span>
+      <!-- Pricing Plans Section -->
+      <section class="pricing-section" aria-labelledby="pricing-title">
+        <div class="container">
+          <header class="section-header">
+            <h2 id="pricing-title" class="section-title">Choose Your Plan</h2>
+            <p class="section-subtitle">
+              Start with our free plan or upgrade for unlimited access
+            </p>
+          </header>
+
+          <div class="pricing-grid">
+            <!-- Basic Plan -->
+            <article class="pricing-card">
+              <div class="card-header">
+                <h3 class="plan-name">Basic</h3>
+                <div class="price-display">
+                  <span class="currency">$</span>
+                  <span class="amount" data-monthly="0" data-yearly="0">0</span>
+                  <span class="period">/month</span>
+                </div>
+                <p class="plan-description">Perfect for occasional players</p>
               </div>
-              <p class="plan-description">Perfect for occasional players</p>
-            </div>
-            
-            <ul class="features-list" role="list">
-              <li class="feature-item">
-                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                Book up to 2 courts per month
-              </li>
-              <li class="feature-item">
-                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                Basic court filtering
-              </li>
-              <li class="feature-item">
-                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                Email support
-              </li>
-              <li class="feature-item">
-                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                Court reviews
-              </li>
-            </ul>
-            
-            <a href="SignUp.html?plan=basic" class="btn btn-outline btn-full">Get Started</a>
-          </article>
 
-          <!-- Pro Plan (Popular) -->
-          <article class="pricing-card featured">
-            <div class="popular-badge">
-              <svg class="star-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-              </svg>
-              Most Popular
-            </div>
-            
-            <div class="card-header">
-              <h3 class="plan-name">Pro</h3>
-              <div class="price-display">
-                <span class="currency">$</span>
-                <span class="amount" data-monthly="29" data-yearly="23">29</span>
-                <span class="period">/month</span>
+              <ul class="features-list" role="list">
+                <li class="feature-item">
+                  <svg
+                    class="check-icon"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Book up to 2 courts per month
+                </li>
+                <li class="feature-item">
+                  <svg
+                    class="check-icon"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Basic court filtering
+                </li>
+                <li class="feature-item">
+                  <svg
+                    class="check-icon"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Email support
+                </li>
+                <li class="feature-item">
+                  <svg
+                    class="check-icon"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Court reviews
+                </li>
+              </ul>
+
+              <a href="signup.html?plan=basic" class="btn btn-outline btn-full"
+                >Get Started</a
+              >
+            </article>
+
+            <!-- Pro Plan (Popular) -->
+            <article class="pricing-card featured">
+              <div class="popular-badge">
+                <svg
+                  class="star-icon"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
+                </svg>
+                Most Popular
               </div>
-              <p class="plan-description">For regular sports enthusiasts</p>
-            </div>
-            
-            <ul class="features-list" role="list">
-              <li class="feature-item">
-                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                Unlimited court bookings
-              </li>
-              <li class="feature-item">
-                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                Advanced court filtering
-              </li>
-              <li class="feature-item">
-                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                Priority support
-              </li>
-              <li class="feature-item">
-                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                Court reviews & ratings
-              </li>
-              <li class="feature-item">
-                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                Booking history
-              </li>
-              <li class="feature-item">
-                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                Special discounts
-              </li>
-            </ul>
-            
-            <a href="SignUp.html?plan=pro" class="btn btn-primary btn-full">Get Started</a>
-          </article>
 
-          <!-- Business Plan -->
-          <article class="pricing-card">
-            <div class="card-header">
-              <h3 class="plan-name">Business</h3>
-              <div class="price-display">
-                <span class="currency">$</span>
-                <span class="amount" data-monthly="99" data-yearly="79">99</span>
-                <span class="period">/month</span>
+              <div class="card-header">
+                <h3 class="plan-name">Pro</h3>
+                <div class="price-display">
+                  <span class="currency">$</span>
+                  <span class="amount" data-monthly="29" data-yearly="23"
+                    >29</span
+                  >
+                  <span class="period">/month</span>
+                </div>
+                <p class="plan-description">For regular sports enthusiasts</p>
               </div>
-              <p class="plan-description">For court owners & businesses</p>
-            </div>
-            
-            <ul class="features-list" role="list">
-              <li class="feature-item">
-                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                All Pro features
-              </li>
-              <li class="feature-item">
-                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                Court management dashboard
-              </li>
-              <li class="feature-item">
-                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                Analytics & reporting
-              </li>
-              <li class="feature-item">
-                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                Multiple court listings
-              </li>
-              <li class="feature-item">
-                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                Custom branding
-              </li>
-              <li class="feature-item">
-                <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                24/7 priority support
-              </li>
-            </ul>
-            
-            <a href="contact.html?topic=sales&plan=business" class="btn btn-outline btn-full">Contact Sales</a>
-          </article>
-        </div>
-      </div>
-    </section>
 
-    <!-- FAQ Section -->
-    <section class="faq-section" aria-labelledby="faq-title">
-      <div class="container">
-        <header class="section-header">
-          <h2 id="faq-title" class="section-title">Frequently Asked Questions</h2>
-          <div class="title-underline"></div>
-        </header>
-        
-        <div class="faq-grid">
-          <article class="faq-item">
-            <button class="faq-question" aria-expanded="false" type="button">
-              <span>How does the billing cycle work?</span>
-              <svg class="chevron-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
-              </svg>
-            </button>
-            <div class="faq-answer">
-              <p>Our billing cycle starts from the day you subscribe. You'll be billed the same day each month/year depending on your chosen plan. You can cancel or change your plan at any time.</p>
-            </div>
-          </article>
+              <ul class="features-list" role="list">
+                <li class="feature-item">
+                  <svg
+                    class="check-icon"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Unlimited court bookings
+                </li>
+                <li class="feature-item">
+                  <svg
+                    class="check-icon"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Advanced court filtering
+                </li>
+                <li class="feature-item">
+                  <svg
+                    class="check-icon"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Priority support
+                </li>
+                <li class="feature-item">
+                  <svg
+                    class="check-icon"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Court reviews & ratings
+                </li>
+                <li class="feature-item">
+                  <svg
+                    class="check-icon"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Booking history
+                </li>
+                <li class="feature-item">
+                  <svg
+                    class="check-icon"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Special discounts
+                </li>
+              </ul>
 
-          <article class="faq-item">
-            <button class="faq-question" aria-expanded="false" type="button">
-              <span>Can I switch between plans?</span>
-              <svg class="chevron-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
-              </svg>
-            </button>
-            <div class="faq-answer">
-              <p>Yes, you can upgrade or downgrade your plan at any time. The price difference will be prorated based on the remaining days in your billing cycle.</p>
-            </div>
-          </article>
+              <a href="signup.html?plan=pro" class="btn btn-primary btn-full"
+                >Get Started</a
+              >
+            </article>
 
-          <article class="faq-item">
-            <button class="faq-question" aria-expanded="false" type="button">
-              <span>What payment methods do you accept?</span>
-              <svg class="chevron-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
-              </svg>
-            </button>
-            <div class="faq-answer">
-              <p>We accept all major credit cards (Visa, MasterCard, American Express), PayPal, and bank transfers for business plans.</p>
-            </div>
-          </article>
+            <!-- Business Plan -->
+            <article class="pricing-card">
+              <div class="card-header">
+                <h3 class="plan-name">Business</h3>
+                <div class="price-display">
+                  <span class="currency">$</span>
+                  <span class="amount" data-monthly="99" data-yearly="79"
+                    >99</span
+                  >
+                  <span class="period">/month</span>
+                </div>
+                <p class="plan-description">For court owners & businesses</p>
+              </div>
 
-          <article class="faq-item">
-            <button class="faq-question" aria-expanded="false" type="button">
-              <span>Is there a contract or commitment?</span>
-              <svg class="chevron-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
-              </svg>
-            </button>
-            <div class="faq-answer">
-              <p>No, all our plans are subscription-based with no long-term contracts. You can cancel at any time without any cancellation fees.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
+              <ul class="features-list" role="list">
+                <li class="feature-item">
+                  <svg
+                    class="check-icon"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  All Pro features
+                </li>
+                <li class="feature-item">
+                  <svg
+                    class="check-icon"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Court management dashboard
+                </li>
+                <li class="feature-item">
+                  <svg
+                    class="check-icon"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Analytics & reporting
+                </li>
+                <li class="feature-item">
+                  <svg
+                    class="check-icon"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Multiple court listings
+                </li>
+                <li class="feature-item">
+                  <svg
+                    class="check-icon"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Custom branding
+                </li>
+                <li class="feature-item">
+                  <svg
+                    class="check-icon"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  24/7 priority support
+                </li>
+              </ul>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-      <div class="cta-background">
-        <div class="cta-pattern"></div>
-        <div class="cta-gradient"></div>
-      </div>
-      <div class="container">
-        <div class="cta-content">
-          <h2 class="cta-title">Ready to get started?</h2>
-          <p class="cta-subtitle">Join thousands of sports enthusiasts who trust Mala3b for their court bookings.</p>
-          <div class="cta-buttons">
-            <a href="SignUp.html" class="btn btn-primary btn-large">Sign Up Now</a>
-            <a href="contact.html?topic=sales" class="btn btn-ghost btn-large">Contact Sales</a>
+              <a
+                href="contact.html?topic=sales&plan=business"
+                class="btn btn-outline btn-full"
+                >Contact Sales</a
+              >
+            </article>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <!-- Footer -->
-   <footer class="footer"></footer>
+      <!-- FAQ Section -->
+      <section class="faq-section" aria-labelledby="faq-title">
+        <div class="container">
+          <header class="section-header">
+            <h2 id="faq-title" class="section-title">
+              Frequently Asked Questions
+            </h2>
+            <div class="title-underline"></div>
+          </header>
 
+          <div class="faq-grid">
+            <article class="faq-item">
+              <button class="faq-question" aria-expanded="false" type="button">
+                <span>How does the billing cycle work?</span>
+                <svg
+                  class="chevron-icon"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Our billing cycle starts from the day you subscribe. You'll be
+                  billed the same day each month/year depending on your chosen
+                  plan. You can cancel or change your plan at any time.
+                </p>
+              </div>
+            </article>
 
-  <script src="../assets/js/pricing.js"></script>
-  <script src="../assets/js/injict.js"></script>
-</body>
+            <article class="faq-item">
+              <button class="faq-question" aria-expanded="false" type="button">
+                <span>Can I switch between plans?</span>
+                <svg
+                  class="chevron-icon"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes, you can upgrade or downgrade your plan at any time. The
+                  price difference will be prorated based on the remaining days
+                  in your billing cycle.
+                </p>
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <button class="faq-question" aria-expanded="false" type="button">
+                <span>What payment methods do you accept?</span>
+                <svg
+                  class="chevron-icon"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  We accept all major credit cards (Visa, MasterCard, American
+                  Express), PayPal, and bank transfers for business plans.
+                </p>
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <button class="faq-question" aria-expanded="false" type="button">
+                <span>Is there a contract or commitment?</span>
+                <svg
+                  class="chevron-icon"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  No, all our plans are subscription-based with no long-term
+                  contracts. You can cancel at any time without any cancellation
+                  fees.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta-section">
+        <div class="cta-background">
+          <div class="cta-pattern"></div>
+          <div class="cta-gradient"></div>
+        </div>
+        <div class="container">
+          <div class="cta-content">
+            <h2 class="cta-title">Ready to get started?</h2>
+            <p class="cta-subtitle">
+              Join thousands of sports enthusiasts who trust Mala3b for their
+              court bookings.
+            </p>
+            <div class="cta-buttons">
+              <a href="signup.html" class="btn btn-primary btn-large"
+                >Sign Up Now</a
+              >
+              <a href="contact.html?topic=sales" class="btn btn-ghost btn-large"
+                >Contact Sales</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer"></footer>
+
+    <script src="../assets/js/pricing.js"></script>
+    <script src="../assets/js/injict.js"></script>
+  </body>
 </html>
